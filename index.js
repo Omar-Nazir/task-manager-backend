@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
-const PORT =  "https://task-manager-backend-production-dcec.up.railway.app/" || 5000;
+const PORT =  process.env.REACT_APP_URL || 5000 ;
 
 app.use(cors());
 app.use(express.json());
